@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){
+	int i,array[6];
+	printf("Enter six numbers: ");
+	for(i=0; i<6; i++){
+		scanf("%d", &array[i]);
+	}
+	int temp = array[5];
+	for(i=5; i>=0; i--){
+		
+			 array[i+1]=array[i];
+			
+	}
+	array[0]=temp;
+	for(i=0; i<6; i++){
+		printf("%d ", array[i]);
+	}
+	
+}
